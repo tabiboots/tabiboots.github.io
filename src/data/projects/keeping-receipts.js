@@ -1,4 +1,4 @@
-import { cdn, cdnVideo } from '../../lib/cloudinary'
+import { cdn } from '../../lib/cloudinary'
 
 
 export default {
@@ -23,6 +23,21 @@ export default {
       'economy.', 'The piece also functions as a contemporary archive, capturing fleeting\n' +
       'interactions that platforms are designed to erase or replace instantly. In\n' +
       'doing so, it questions how memory, value, and personal agency are shaped\n' +
-      'by algorithmic systems built to maximize engagement rather than reflection.']}
+      'by algorithmic systems built to maximize engagement rather than reflection.']},
+    {
+      kind: 'image-grid',
+      images: [
+        { kind: 'image', src: cdn('q_auto/f_auto/keeping-receipts-gallery1_mpwkel'), ratio: '3/2', caption: 'Receipts piled on the floor', style: { height: 'auto' } },
+      ],
+    },
+    { kind: 'section', heading: 'Process' },
+    {
+      kind: 'image-grid',
+      images: [
+        { kind: 'image', src: cdn('q_auto/f_auto/keeping-receipts-process1_dvo7iw'), ratio: '17/22', caption: 'Process receipt, part 1', style: { height: 'auto' } },
+        { kind: 'image', src: cdn('q_auto/f_auto/keeping-receipts-process2_do9iho'), ratio: '17/22', caption: 'Process receipt, part 2', style: { height: 'auto' } },
+        { kind: 'image', src: cdn('q_auto/f_auto/keeping-receipts-process3_zdqnna'), ratio: '17/22', caption: 'Process receipt, part 3', style: { height: 'auto' } },
+      ],
+    },
   ],
 }

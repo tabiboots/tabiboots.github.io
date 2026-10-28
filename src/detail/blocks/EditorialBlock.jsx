@@ -118,7 +118,7 @@ export function EditorialBlock({ block: b, openLightbox, mobile = false }) {
   if (b.kind === 'credits') {
     return (
       <div style={{ borderTop: '1px solid var(--hairline)', paddingTop: mobile ? 22 : 28 }}>
-        <div className="mono" style={{ marginBottom: mobile ? 12 : 16 }}>Credits</div>
+        <div className="mono" style={{ marginBottom: mobile ? 12 : 16 }}>{b.title || 'Credits'}</div>
         <dl style={{ margin: 0, display: 'grid', gridTemplateColumns: mobile ? '110px 1fr' : '200px 1fr', rowGap: mobile ? 8 : 10, columnGap: mobile ? 14 : 24 }}>
           {b.rows.map((r) => (
             <span key={r.label} style={{ display: 'contents' }}>

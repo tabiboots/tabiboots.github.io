@@ -60,10 +60,13 @@
 import indulge from './projects/indulge.jsx'
 import tv from './projects/tv.jsx'
 import keepingReceipts from './projects/keeping-receipts'
+import nameChangeGame from './projects/name-change-game.jsx'
 
 export const PROJECTS = [
-    tv,
     indulge,
-    keepingReceipts
+    nameChangeGame,
+    tv,
+    keepingReceipts,
+
 
 ]

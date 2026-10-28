@@ -15,6 +15,7 @@ export function Media({ media, style, className }) {
           objectPosition: media.objectPosition || 'center',
           aspectRatio: media.ratio || undefined,
           ...style,
+          ...media.style,
         }}
       />
     )
